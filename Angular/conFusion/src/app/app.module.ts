@@ -15,8 +15,8 @@ import 'hammerjs';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
-    MatToolbarModule
+    MatToolbarModule,
+    FlexLayoutModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
