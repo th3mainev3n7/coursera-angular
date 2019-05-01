@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Leader } from '../shared/leader';
 import { LEADERS } from '../shared/leaders';
+import { Dish } from '../shared/dish';
 
 @Injectable({
   providedIn: 'root'
@@ -15,5 +16,9 @@ export class LeaderService {
 
   getLeader(id: string): Leader {
     return  LEADERS.filter((leader) => (leader.id === id))[0];
+  }
+
+  getFeaturedLeader(): Leader {
+    return LEADERS.filter((leader) => leader.featured)[0];
   }
 }
